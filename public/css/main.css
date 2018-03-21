@@ -1,0 +1,86 @@
+#logo,
+#header,
+label {
+
+
+  font-family: 'Berkshire Swash', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  margin: 20px 0;
+}
+
+#error {
+  position: absolute;
+  right: -500px;
+  bottom: 50px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(#101010, .8);
+  z-index: 10;
+  animation: animation 5s ease-out;
+}
+
+#info {
+  position: absolute;
+  right: -500px;
+  bottom: 50px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(#101010, .8);
+  z-index: 10;
+  animation: animation 5s ease-out;
+}
+
+#success {
+  position: absolute;
+  right: -500px;
+  bottom: 50px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(#101010, .8);
+  z-index: 10;
+  animation: animation 5s ease-out;
+}
+
+
+@keyframes animation {
+
+  0% {
+    right: -500px;
+  }
+
+  20% {
+    right: 50px;
+  }
+
+  40% {
+    right: 50px;
+  }
+
+  60% {
+    right: 50px;
+  }
+
+  80% {
+    right: 50px;
+  }
+
+  100% {
+    right: -500px;
+  }
+
+}

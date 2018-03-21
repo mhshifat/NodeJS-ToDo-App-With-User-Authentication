@@ -1,0 +1,30 @@
+{{> header}}
+
+  <div class="container">
+    <center><h2 id="header">ToDo Lists</h2></center>
+    <br>
+    <div class="row">
+      <div class="col-md-6 offset-3">
+        <form action="/task" method="POST">
+          <div class="form-group">
+            <input type="text" name="task" class="form-control" id="exampleInputPassword1" placeholder="Task Name....">
+          </div>
+          <button type="submit" class="btn btn-primary form-control">Add</button>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6 offset-3">
+        <center><h4>Todo Tasks</h4></center>
+        <br>
+        <ul class="list-group">
+          {{#each tasks}}
+            <li class="list-group-item"><a href="/mark/{{this._id}}" class="btn btn-success btn-sm">Completed</a> &nbsp;&nbsp;&nbsp;&nbsp;{{this.task}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+{{> footer}}
